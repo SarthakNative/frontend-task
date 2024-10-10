@@ -74,14 +74,33 @@ body {
     gap: 10px;
 }
 
-.select-row {
+.select-labels {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.label {
+    flex: 1;
+    font-size: 0.8em;
+    color: #666;
+    text-align: left;
+}
+
+.select-row {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
+.row-number {
+    font-weight: bold;
+    min-width: 10px;
+}
+
 .select-row select {
-    width: 48%;
+    flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
