@@ -22,31 +22,65 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.box.highlighted {
+    border: 2px solid #FF6B82;
 }
 
 .upper-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 
 .upper-box input[type="radio"] {
     margin-right: 10px;
+    margin-top: 5px;
 }
 
-.upper-box input[type="text"] {
+.text-content {
     flex-grow: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.unit-text {
+    font-weight: bold;
+}
+
+.discount-box {
+    background-color: #FF6B82;
+    color: white;
+    padding: 2px 5px;
     border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.subheading-row {
+    font-size: 0.9em;
+    color: #666;
 }
 
 .lower-box {
     display: none;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.lower-box select {
+.select-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.select-row select {
     width: 48%;
     padding: 5px;
     border: 1px solid #ccc;
