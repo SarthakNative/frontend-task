@@ -4,8 +4,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
 }
 
 .parent-box {
@@ -92,15 +90,15 @@ body {
 
 .select-labels {
     display: flex;
-    margin-bottom: 5px;
-    padding-left: 55px;
+    padding-left: 60px;
+    margin-top: 10px;
 }
 
 .label {
     flex: 1;
-    font-size: 9.94px;
-    color: #666;
-    width: 65.98px;
+    font-size: 12px;
+    color: #000000;
+    width: 75px;
 }
 
 .select-row {
@@ -119,7 +117,6 @@ body {
     flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 .price-info {
@@ -136,10 +133,8 @@ body {
 
 .original-price {
     color: #000000;
-    padding: 2px 5px;
-    border-radius: 3px;
     font-size: 14px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .add-to-cart {
@@ -164,8 +159,9 @@ body {
 
 .powered-by {
     text-align: right;
-    font-size: 0.8em;
-    color: #666;
+    font-size: 12px;
+    color: #000000;
+    opacity: 40%;
     font-style: italic;
 }
 
@@ -191,51 +187,27 @@ body {
     padding: 0 5px;
 }
 
-/* Wrapper for the custom select */
 .custom-select-wrapper {
     position: relative;
     width: 65.98px;
 }
 
-/* Style the select box */
 .custom-select {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
     font-size: 10.85px;
     width: 100%;
     cursor: pointer;
 }
 
-/* Hide the default select dropdown arrow */
-.custom-select::-ms-expand {
-    display: none;
-    /* IE */
-}
-
-/* Add a custom polygon arrow */
 .custom-select-wrapper::after {
     content: '';
     position: absolute;
     top: 50%;
     right: 10px;
-    width: 0;
-    height: 0;
     border-left: 5.42px solid transparent;
     border-right: 5.42px solid transparent;
     border-top: 5.42px solid #333;
-    /* Color of the arrow */
     transform: translateY(-50%);
-    pointer-events: none;
-}
-
-/* Optional: Change arrow color on focus */
-.custom-select:focus+.custom-select-wrapper::after {
-    border-top-color: #000;
-    /* Color when focused */
 }
 
 .subheading-row2 {
@@ -244,13 +216,14 @@ body {
     opacity: 30%;
 }
 
-.middle-box-badge-container{
+.middle-box-badge-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     border: none;
     position: relative;
 }
+
 .middle-box-container {
     display: flex;
     flex-direction: column;
@@ -259,16 +232,7 @@ body {
     position: relative;
 }
 
-.middle-box-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0.9px; /* Border thickness */
-    background: #ccc; /* Border color */
-}
-
-.most-popular-container{
+.most-popular-container {
     position: absolute;
     top: -6.5px;
     right: 0px
@@ -278,10 +242,10 @@ body {
 .shape-container {
     display: flex;
     align-items: flex-start;
-  }
-  
-  .rectangle {
-    width: 119px; /* Set your desired width */ /* Set your desired height */
+}
+
+.rectangle {
+    width: 119px;
     background-color: #FF6B82;
     position: relative;
     border-bottom-right-radius: 4px;
@@ -291,48 +255,48 @@ body {
     text-align: center;
     padding: 7px 0;
     font-size: 12px;
-  }
-  
-  .triangle-left {
-    width: 0;
-    height: 0;
-    border-bottom: 7px solid #D7445B; /* Height is half of the rectangle's width */
-    border-left: 7px solid transparent; /* This should match half of the height of the rectangle */
-  }
-  
-  .triangle-right {
-    width: 0;
-    height: 0;
-    border-bottom: 7px solid #D7445B; /* Same height as left triangle */
-    border-right: 7px solid transparent; /* Matching half the height */
-  }
-  
+}
 
-  .plus-icon {
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #D7445B;
+    border-left: 7px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #D7445B;
+    border-right: 7px solid transparent;
+}
+
+
+.plus-icon {
     width: 9.33px;
     height: 9.33px;
     position: relative;
-  }
-  
-  .plus-icon::before,
-  .plus-icon::after {
+}
+
+.plus-icon::before,
+.plus-icon::after {
     content: '';
     position: absolute;
     background-color: #fff;
-  }
-  
-  .plus-icon::before {
+}
+
+.plus-icon::before {
     width: 100%;
     height: 2px;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-  }
-  
-  .plus-icon::after {
+}
+
+.plus-icon::after {
     width: 2px;
     height: 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-  }
+}
