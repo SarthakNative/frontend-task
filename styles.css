@@ -46,6 +46,7 @@ body {
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .upper-box input[type="radio"] {
@@ -243,66 +244,95 @@ body {
     opacity: 30%;
 }
 
+.middle-box-badge-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    position: relative;
+}
 .middle-box-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 0.99px solid; /* Thickness of the top border */
-    border-image: linear-gradient(to right, #ccc 204px, #FF6B82 1px) 1;
-}
-
-.most-popular {
+    border: none;
     position: relative;
-    width: 136.3px;
-    height: 10px;
-    /* Added height */
-    background-color: #FF6B82;
-    align-self: flex-end;
-    clip-path: polygon(5% 0%, 90% 0%, 95% 100%, 0% 100%);
 }
 
-.most-popular::before,
-.most-popular::after {
-    content: '';
+.middle-box-container::before {
+    content: "";
     position: absolute;
     top: 0;
+    left: 0;
+    height: 0.9px; /* Border thickness */
+    background: #ccc; /* Border color */
+}
+
+.most-popular-container{
+    position: absolute;
+    top: -6.5px;
+    right: 0px
+}
+
+
+.shape-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .rectangle {
+    width: 119px; /* Set your desired width */ /* Set your desired height */
+    background-color: #FF6B82;
+    position: relative;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 12px;
+  }
+  
+  .triangle-left {
     width: 0;
     height: 0;
-    border-style: solid;
-}
+    border-bottom: 7px solid #D7445B; /* Height is half of the rectangle's width */
+    border-left: 7px solid transparent; /* This should match half of the height of the rectangle */
+  }
+  
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #D7445B; /* Same height as left triangle */
+    border-right: 7px solid transparent; /* Matching half the height */
+  }
+  
 
-.most-popular::before {
-    left: 0;
-    border-width: 10px 0 0 7px;
-    border-color:#D7445B;
-}
-
-.most-popular::after {
-    right: 0;
-    border-width: 10px 0 0 15px;
-    border-color: #D7445B;
-}
-.middle-box-container2{
-    display: flex;
-    width: 100%;
-}
-.most-popular2 {
+  .plus-icon {
+    width: 9.33px;
+    height: 9.33px;
     position: relative;
-    width: 119px;
-    background-color: #FF6B82;
-    align-self: flex-end;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    margin-right: 10px;
-    color: white;
-    font-weight: 700;
-   text-align: center;
-   font-size: 12px;
-}
-
-.mid-box{
-    display: flex;
-    border-bottom: 0.9px solid #ccc;
-    border-left: 0.9px solid #ccc;
-    border-right: 0.9px solid #ccc;
-}
+  }
+  
+  .plus-icon::before,
+  .plus-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+  }
+  
+  .plus-icon::before {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .plus-icon::after {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
