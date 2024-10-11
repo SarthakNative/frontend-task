@@ -14,17 +14,12 @@ body {
     gap: 20px;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 341px;
 }
 
 .box {
     display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-    overflow: hidden;
+    border: 0.9px solid #ccc;
 }
 
 .box.highlighted {
@@ -62,26 +57,28 @@ body {
 
 .heading-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
+    gap: 10px;
 }
 
 .unit-text {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14.46px;
 }
 
 .discount-box {
     background-color: #FF6B82;
     color: white;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-size: 0.8em;
+    font-size: 12px;
+    border-radius: 1px;
+    font-weight: 400;
+    padding: 2px 4px;
 }
 
 .subheading-row {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 12px;
+    color:#000000;
 }
 
 .lower-box {
@@ -92,16 +89,15 @@ body {
 
 .select-labels {
     display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
     margin-bottom: 5px;
+    padding-left: 55px;
 }
 
 .label {
     flex: 1;
-    font-size: 0.8em;
+    font-size: 9.94px;
     color: #666;
-    text-align: center;
+    width: 65.98px;
 }
 
 .select-row {
@@ -111,8 +107,9 @@ body {
 }
 
 .row-number {
-    font-weight: bold;
-    min-width: 30px;
+    font-weight: 400px;
+    size: 9.04px;
+    padding-left: 30px;
 }
 
 .select-row select {
@@ -120,12 +117,6 @@ body {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
-}
-
-.bottom-box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
 }
 
 .price-info {
@@ -186,7 +177,7 @@ body {
 }
 
 .dashed-line{
-    border-bottom: 2px solid #C8C8C8;
+    border-bottom: 0.9px solid #C8C8C8;
     height: 10px;
 }
 
@@ -194,6 +185,7 @@ body {
     font-size: 20px;
     color:#FF6B82;
     font-weight: 600;
+    padding: 0 5px;
 }
 
 /* Wrapper for the custom select */
@@ -228,9 +220,9 @@ body {
     right: 10px;
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid #333; /* Color of the arrow */
+    border-left: 5.42px solid transparent;
+    border-right:  5.42px solid transparent;
+    border-top:  5.42px solid #333; /* Color of the arrow */
     transform: translateY(-50%);
     pointer-events: none;
 }
@@ -240,3 +232,8 @@ body {
     border-top-color: #000; /* Color when focused */
 }
 
+.subheading-row2 {
+    font-size: 10px;
+    color: #000000;
+    opacity: 30%;
+}
