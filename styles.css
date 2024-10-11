@@ -196,3 +196,48 @@ body {
     color:#FF6B82;
     font-weight: 600;
 }
+
+/* Wrapper for the custom select */
+.custom-select-wrapper {
+    position: relative;
+    width: 100px;
+}
+
+/* Style the select box */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Hide the default select dropdown arrow */
+.custom-select::-ms-expand {
+    display: none; /* IE */
+}
+
+/* Add a custom polygon arrow */
+.custom-select-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #333; /* Color of the arrow */
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Optional: Change arrow color on focus */
+.custom-select:focus + .custom-select-wrapper::after {
+    border-top-color: #000; /* Color when focused */
+}
+
