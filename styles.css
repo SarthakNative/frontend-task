@@ -16,8 +16,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
+    width: 341px;
 }
 
 .box {
@@ -200,7 +199,7 @@ body {
 /* Wrapper for the custom select */
 .custom-select-wrapper {
     position: relative;
-    width: 100px;
+    width: 65.98px;
 }
 
 /* Style the select box */
@@ -211,7 +210,7 @@ body {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
-    font-size: 16px;
+    font-size: 10.85px;
     width: 100%;
     cursor: pointer;
 }
