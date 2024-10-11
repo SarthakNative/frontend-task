@@ -24,6 +24,8 @@ body {
 
 .box.highlighted {
     border: 2px solid #FF6B82;
+    background-color: #FFF9FA;
+
 }
 
 .inner-box {
@@ -78,7 +80,7 @@ body {
 
 .subheading-row {
     font-size: 12px;
-    color:#000000;
+    color: #000000;
 }
 
 .lower-box {
@@ -146,7 +148,7 @@ body {
     border: none;
     padding: 10px;
     font-size: 1em;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -166,24 +168,24 @@ body {
     font-style: italic;
 }
 
-.card-header{
+.card-header {
     display: flex;
 }
 
-.dashed-line{
+.dashed-line {
     flex: 1;
     flex-direction: column;
     height: 20px;
 }
 
-.dashed-line{
+.dashed-line {
     border-bottom: 0.9px solid #C8C8C8;
     height: 10px;
 }
 
-.card-header-text{
+.card-header-text {
     font-size: 20px;
-    color:#FF6B82;
+    color: #FF6B82;
     font-weight: 600;
     padding: 0 5px;
 }
@@ -209,7 +211,8 @@ body {
 
 /* Hide the default select dropdown arrow */
 .custom-select::-ms-expand {
-    display: none; /* IE */
+    display: none;
+    /* IE */
 }
 
 /* Add a custom polygon arrow */
@@ -221,19 +224,85 @@ body {
     width: 0;
     height: 0;
     border-left: 5.42px solid transparent;
-    border-right:  5.42px solid transparent;
-    border-top:  5.42px solid #333; /* Color of the arrow */
+    border-right: 5.42px solid transparent;
+    border-top: 5.42px solid #333;
+    /* Color of the arrow */
     transform: translateY(-50%);
     pointer-events: none;
 }
 
 /* Optional: Change arrow color on focus */
-.custom-select:focus + .custom-select-wrapper::after {
-    border-top-color: #000; /* Color when focused */
+.custom-select:focus+.custom-select-wrapper::after {
+    border-top-color: #000;
+    /* Color when focused */
 }
 
 .subheading-row2 {
     font-size: 10px;
     color: #000000;
     opacity: 30%;
+}
+
+.middle-box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 0.99px solid; /* Thickness of the top border */
+    border-image: linear-gradient(to right, #ccc 204px, #FF6B82 1px) 1;
+}
+
+.most-popular {
+    position: relative;
+    width: 136.3px;
+    height: 10px;
+    /* Added height */
+    background-color: #FF6B82;
+    align-self: flex-end;
+    clip-path: polygon(5% 0%, 90% 0%, 95% 100%, 0% 100%);
+}
+
+.most-popular::before,
+.most-popular::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.most-popular::before {
+    left: 0;
+    border-width: 10px 0 0 7px;
+    border-color:#D7445B;
+}
+
+.most-popular::after {
+    right: 0;
+    border-width: 10px 0 0 15px;
+    border-color: #D7445B;
+}
+.middle-box-container2{
+    display: flex;
+    width: 100%;
+}
+.most-popular2 {
+    position: relative;
+    width: 119px;
+    background-color: #FF6B82;
+    align-self: flex-end;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 700;
+   text-align: center;
+   font-size: 12px;
+}
+
+.mid-box{
+    display: flex;
+    border-bottom: 0.9px solid #ccc;
+    border-left: 0.9px solid #ccc;
+    border-right: 0.9px solid #ccc;
 }
