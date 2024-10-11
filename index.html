@@ -5,50 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Boxes</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-veFXco8QjiH+jvud6VG+R1vyh/TVpIo7/MCzCBGUFOeaqtft8AUtwNcTpP/vSwCfdrFCCcleKMF+:VBBDel/9l" crossorigin="anonymous" />
 </head>
 <body>
     <div class="parent-box">
+        <div class="card-header">
+         <div class="dashed-line">
+            <div class="dashed-line-border">
+                
+            </div>
+         </div>
+         <div class="card-header-text">YAY! It’s BOGO</div>
+         <div class="dashed-line"></div>
+        </div>
         <div class="box" id="box1">
-            <div class="upper-box">
-                <input type="radio" name="box-select" id="radio1">
-                <div class="text-content">
-                    <div class="heading-row">
-                        <div class="unit-text">Unit</div>
-                        <div class="discount-box">10% off</div>
+            <div class="inner-box">
+                <div class="upper-box">
+                    <input type="radio" name="box-select" id="radio1">
+                    <div class="text-content">
+                        <div class="heading-row">
+                            <div class="unit-text">Unit</div>
+                            <div class="discount-box">10% off</div>
+                        </div>
+                        <div class="subheading-row">Standard Price</div>
                     </div>
-                    <div class="subheading-row">Standard Price</div>
+                </div>
+                <div class="lower-box">
+                    <div class="select-labels">
+                        <div class="label">Size</div>
+                        <div class="label">Color</div>
+                    </div>
+                    <div class="select-row">
+                        <div class="row-number">#1</div>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                        <select>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <div class="row-number">#2</div>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                        <select>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="lower-box">
-                <div class="select-labels">
-                    <div class="label">Size</div>
-                    <div class="label">Color</div>
-                </div>
-                <div class="select-row" >
-                    <div class="row-number">#1</div>
-                    <select>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
-                    <select>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Green</option>
-                    </select>
-                </div>
-                <div class="select-row">
-                    <div class="row-number">#2</div>
-                    <select>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
-                    <select>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Green</option>
-                    </select>
+            <div class="inner-box2">
+                <div class="upper-box">
+                    <div class="text-content">
+                        <div class="heading-row">
+                            <div class="unit-text">Additional Info</div>
+                        </div>
+                        <div class="subheading-row">Extra Details</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +142,19 @@
                 </div>
             </div>
         </div>
+        <div class="bottom-box">
+            <div class="price-info">
+                <span class="discounted-price">Free Delivery</span>
+                <span class="original-price">Total : $18.00 USD</span>
+            </div>
+            <button class="add-to-cart">
+                <i class="fas fa-plus"></i> Add to Cart
+            </button>
+            <div class="powered-by">
+                @ Powered by Pumper
+            </div>
+        </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
